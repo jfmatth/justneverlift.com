@@ -52,8 +52,6 @@ The following image is located within the Hugo site. Because it has alt text but
 
 The following image is loaded from a remote URL. The alt text is the same (for screen readers and in cases when the image doesn't load) but because a separate title is provided, the title is used for the caption:
 
-![Jane Doe](https://raw.githubusercontent.com/chipzoller/hugo-clarity/master/exampleSite/static/images/jane-doe.png "This is Jane Doe")
-
 ### Image with alt text and no caption
 
 Alt text is always recommended for SEO, accessibility and in cases when images don't load. However, you don't necessarily always want an image to have a caption. In that case, use a title with one space:
