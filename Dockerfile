@@ -5,7 +5,7 @@ COPY hugo/. /static-site
 
 # Command Hugo to build the static site from the source files,
 # setting the destination to the public directory.
-RUN hugo -D --source=/static-site -v
+RUN hugo -D --source=/static-site -v -b "/"
 
 # Install NGINX, remove the default NGINX index.html file, and
 # copy the built static site files to the NGINX html directory.
