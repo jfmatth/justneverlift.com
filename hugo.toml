@@ -1,4 +1,4 @@
-baseURL = "https://lightbi-hugo-theme.netlify.app/"
+baseURL = "https://jnl.3756home.org/"
 languageCode = 'en-us'
 title = 'Just Never Lift'
 theme = "lightbi-hugo"
