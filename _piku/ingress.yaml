@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: jnl.3756home.org
+  namespace: piku
   annotations:
     cert-manager.io/cluster-issuer: clusterissuer
     traefik.ingress.kubernetes.io/router.middlewares: cert-manager-redirect@kubernetescrd
@@ -19,6 +20,6 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name:  piku-service
+                name:  vm111
                 port:
                   name: http
