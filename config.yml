@@ -1,0 +1,29 @@
+theme: ['PaperMod']
+baseURL: ""
+languageCode: en-us
+title: Just Never Lift
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About Me
+      url: /about/about
+      weight: 30
+
+params:
+  mainSections: ["posts"]
+  showReadingTime: true
+  showBreadCrumbs: true
+
+taxonimies:
+  category: categories
+  tag: tags
+  series: series
