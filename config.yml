@@ -19,7 +19,7 @@ menu:
       weight: 30
 
 params:
-  mainSections: ["posts"]
+  mainSections: ["posts", "misc"]
   showReadingTime: true
   showBreadCrumbs: true
 
