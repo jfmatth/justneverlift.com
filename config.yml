@@ -1,5 +1,5 @@
 theme: ['PaperMod']
-baseURL: "https://localhost"
+baseURL: ""
 languageCode: en-us
 title: Just Never Lift
 
