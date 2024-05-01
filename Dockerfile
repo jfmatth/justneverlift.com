@@ -10,7 +10,8 @@ RUN hugo --logLevel debug --source=/static-site --destination=/static-site/publi
 
 # Install NGINX, remove the default NGINX index.html file, and
 # copy the built static site files to the NGINX html directory.
-# FROM nginx:stable-alpine
-FROM cgr.dev/chainguard/nginx:latest
+FROM nginx
+# FROM cgr.dev/chainguard/nginx:latest
 COPY --from=HUGO /static-site/public/ /usr/share/nginx/html/
 
+expose 80
