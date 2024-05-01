@@ -1,2 +1,0 @@
-NGINX_SERVER_NAME=jnl.3756home.org
-NGINX_INCLUDE_FILE=./_piku/nginx-logs.conf

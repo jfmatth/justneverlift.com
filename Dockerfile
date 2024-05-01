@@ -12,8 +12,5 @@ RUN hugo --logLevel debug --source=/static-site --destination=/static-site/publi
 # copy the built static site files to the NGINX html directory.
 # FROM nginx:stable-alpine
 FROM cgr.dev/chainguard/nginx:latest
-# RUN mv /usr/share/nginx/html/index.html /usr/share/nginx/html/old-index.html
 COPY --from=HUGO /static-site/public/ /usr/share/nginx/html/
 
-# Instruct the container to listen for requests on port 80 (HTTP).
-EXPOSE 80

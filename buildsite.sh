@@ -1,1 +1,1 @@
-hugo --logLevel info
+hugo --logLevel debug
