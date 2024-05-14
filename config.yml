@@ -1,4 +1,4 @@
-theme: ['PaperMod']
+theme: ['hugo-clarity']
 baseURL: ""
 languageCode: en-us
 title: Just Never Lift
