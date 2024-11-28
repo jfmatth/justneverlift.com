@@ -1,5 +1,4 @@
-
-FROM ghcr.io/jfmatth/hugobuilder:v0.2 as HUGO
+FROM ghcr.io/jfmatth/hugobuilder:v0.139.2 as HUGO
 
 # Copy the contents of the current working directory to the static-site directory.
 COPY . /static-site
@@ -10,7 +9,8 @@ RUN hugo --logLevel debug --source=/static-site --destination=/static-site/publi
 
 # Install NGINX, remove the default NGINX index.html file, and
 # copy the built static site files to the NGINX html directory.
-FROM docker.io/nginx
+# FROM docker.io/nginx
+FROM cgr.dev/chainguard/nginx
 COPY --from=HUGO /static-site/public/ /usr/share/nginx/html/
 
 expose 80
