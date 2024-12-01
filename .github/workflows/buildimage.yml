@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      # - develop
+      - develop
 
 jobs:
   build:
@@ -16,9 +16,14 @@ jobs:
         with:
           submodules: recursive
 
+      # - name: Define variable
+      #   id: define_version
+      #   run: echo "::set-output name=ver::$(cat VERSION)"
+
+      # https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
       - name: Define variable
         id: define_version
-        run: echo "::set-output name=ver::$(cat VERSION)"
+        run: echo "ENV=$(cat VERSION)" >> $GITHUB_OUTPUT
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
@@ -32,4 +37,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.ver }}
+          tags: ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VERSION }}
