@@ -12,5 +12,3 @@ RUN hugo --logLevel debug --source=/static-site --destination=/static-site/publi
 # FROM docker.io/nginx
 FROM cgr.dev/chainguard/nginx
 COPY --from=HUGO /static-site/public/ /usr/share/nginx/html/
-
-expose 80
