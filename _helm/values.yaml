@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/jfmatth/justneverlift.com
-  tag: "v.2024.11.30-1"
+  tag: "v.2024.11.12/.8"
   pullPolicy: Always
   
 imagePullSecrets: []
