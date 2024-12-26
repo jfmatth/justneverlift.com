@@ -27,3 +27,7 @@ taxonimies:
   category: categories
   tag: tags
   series: series
+
+assets:
+  disableHLJS: true
+  favicon: "assets/favicon.ico"
