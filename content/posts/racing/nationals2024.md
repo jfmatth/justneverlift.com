@@ -2,8 +2,8 @@
 title: 'Nationals 2024'
 date: 2024-09-16T21:51:14-07:00
 draft: false
-categories: [racing]
-tags: [nasa]
+categories: ['racing']
+tags: ['st5','nasa', '99 miata','2024']
 ---
 
 
