@@ -51,12 +51,13 @@ ingress:
 
     # for when DO DNS works with cnames
     # trying 4/4, see if it works :)
-    external-dns.alpha.kubernetes.io/target: "edge.3756home.org"
-    external-dns.alpha.kubernetes.io/record-type: "CNAME"
+    # external-dns.alpha.kubernetes.io/target: "edge.3756home.org"
+    # external-dns.alpha.kubernetes.io/record-type: "CNAME"
+    # external-dns.alpha.kubernetes.io/hostname: justneverlift.com
 
     # for now
-    # external-dns.alpha.kubernetes.io/target: "104.182.229.89"
-    # external-dns.alpha.kubernetes.io/record-type: "A"
+    external-dns.alpha.kubernetes.io/target: "104.182.229.89"
+    external-dns.alpha.kubernetes.io/record-type: "A"
 
   hosts:
     - host: justneverlift.com
