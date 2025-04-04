@@ -48,7 +48,7 @@ ingress:
   annotations:
     cert-manager.io/cluster-issuer: clusterissuer
     traefik.ingress.kubernetes.io/router.middlewares: cert-manager-redirect@kubernetescrd
-    external-dns.alpha.kubernetes.io/hostname: justneverlift.com
+    # external-dns.alpha.kubernetes.io/hostname: justneverlift.com
 
   hosts:
     - host: justneverlift.com
