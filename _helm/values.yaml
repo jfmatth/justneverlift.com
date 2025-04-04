@@ -48,7 +48,14 @@ ingress:
   annotations:
     cert-manager.io/cluster-issuer: clusterissuer
     traefik.ingress.kubernetes.io/router.middlewares: cert-manager-redirect@kubernetescrd
-    # external-dns.alpha.kubernetes.io/hostname: justneverlift.com
+
+    # for when DO DNS works with cnames
+    # external-dns.alpha.kubernetes.io/target: "edge.3756home.org"
+    # external-dns.alpha.kubernetes.io/record-type: "CNAME"
+
+    # for now
+    external-dns.alpha.kubernetes.io/target: "104.182.229.89"
+    external-dns.alpha.kubernetes.io/record-type: "A"
 
   hosts:
     - host: justneverlift.com
