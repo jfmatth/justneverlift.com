@@ -47,7 +47,7 @@ ingress:
   className: ""
   annotations:
     cert-manager.io/cluster-issuer: clusterissuer
-    # traefik.ingress.kubernetes.io/router.middlewares: cert-manager-redirect@kubernetescrd
+    traefik.ingress.kubernetes.io/router.middlewares: cert-manager-redirect-https@kubernetescrd
 
     # for when DO DNS works with cnames
     # trying 4/4, see if it works :)
