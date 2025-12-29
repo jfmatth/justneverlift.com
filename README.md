@@ -16,4 +16,5 @@ helm upgrade justneverlift -n jnl .\_helm\
 ghcr.io/jfmatth/justneverlift.com
 
 
-Enjoy  
+## Major changes
+12-28-2025 - Tired of the original hugo theme changing and having to correct MY content.  Switched to mainroad theme instead.
