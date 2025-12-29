@@ -13,4 +13,7 @@ For each update:
 helm upgrade justneverlift -n jnl .\_helm\
 ```
 
+ghcr.io/jfmatth/justneverlift.com
+
+
 Enjoy  
