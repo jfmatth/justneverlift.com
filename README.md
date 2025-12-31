@@ -9,6 +9,16 @@ For each update:
 - run ```build``` which should pickup my build script to build to the ```IMAGE:VERSION``` Docker image, add ```-push``` if you wand to manually push, but GH Actions does that too
 
 
+## Flux info
+If you make a change to the site, it might take up to 30m to push out, due to the timings I have in FLUX.  
+
+To force it, after you commit the changes, do the following in powershell
+```
+flux reconcile kustomization flux-system --with-source
+flux reconcile helmrelease justneverlift -n justneverlift --force
+```
+
+
 ## Major changes
 12-30-2025 - Updated for more automation with Flux, build and IMAGE:VERSION 
 12-28-2025 - Tired of the original hugo theme changing and having to correct MY content.  Switched to mainroad theme instead.
