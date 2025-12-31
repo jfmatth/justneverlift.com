@@ -1,4 +1,7 @@
-theme: PaperMod
+# theme: PaperMod
+
+theme : "mainroad"
+
 baseURL: ""
 languageCode: en-us
 title: Just Never Lift
