@@ -11,11 +11,11 @@ tags: ['st5','nasa', '99 miata','2024']
 
 ## Pics
 
-{{< figure src="https://images.3756home.org/media/images/PXL_20240907_154354102.jpg" title="Our car at Nationls Racecar"  width="auto" >}}
+{{< figure src="http://images.3756home.org/images/PXL_20240907_154354102.jpg" title="Our car at Nationls Racecar"  width="auto" >}}
 
-{{< figure src="https://images.3756home.org/media/images/PXL_20240909_000004756.jpg" title="Packing up"  width="auto" >}}
+{{< figure src="https://images.3756home.org/images/PXL_20240909_000004756.jpg" title="Packing up"  width="auto" >}}
 
-{{< figure src="https://images.3756home.org/media/images/PXL_20240908_134731312.jpg" title="Race Day"  width="auto" >}}
+{{< figure src="https://images.3756home.org/images/PXL_20240908_134731312.jpg" title="Race Day"  width="auto" >}}
 
 
 

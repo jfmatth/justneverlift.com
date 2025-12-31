@@ -16,6 +16,7 @@ To force it, after you commit the changes, do the following in powershell
 ```
 flux reconcile kustomization flux-system --with-source
 flux reconcile helmrelease justneverlift -n justneverlift --force
+flux reconcile image repository justneverlift
 ```
 
 
