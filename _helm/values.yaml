@@ -25,7 +25,11 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
-podLabels: {}
+
+podLabels:
+    tags.datadoghq.com/env: "production"
+    tags.datadoghq.com/service: "justneverlift"
+
 
 podSecurityContext: {}
   # fsGroup: 2000
