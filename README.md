@@ -14,9 +14,8 @@ If you make a change to the site, it might take up to 30m to push out, due to th
 
 To force it, after you commit the changes, do the following in powershell
 ```
-flux reconcile kustomization flux-system --with-source
 flux reconcile image repository justneverlift
-flux reconcile helmrelease justneverlift -n justneverlift --force
+flux reconcile helmrelease justneverlift -n justneverlift
 ```
 
 
