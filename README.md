@@ -2,12 +2,22 @@
 
 This is my site for all things I do at NASA.  I'm not much of a blogger or writer but will try to put videos, thoughts, links, etc. here for everyone to enjoy.
 
+## Development
+
+### Local HUGO Server
+- Make sure the latest HUGO is installed via winget  
+- ```hugo server --log-level info``` does work on Powershell
+
+### New posts
+To create a new post:  
+- ```hugo new post\filename.md``` 
+- All entries go into the post folder (for now)  
+
 ## Building the site
 For each update:
 - change the VERSION file to reflect the version of the container that runs the site.  I use the date format v.YYYY.MM.DD  
 
-- run ```build``` which should pickup my build script to build to the ```IMAGE:VERSION``` Docker image, add ```-push``` if you wand to manually push, but GH Actions does that too
-
+- run ```build``` which should pickup my build script to build to the ```IMAGE:VERSION``` Docker image, add ```-push``` if you want to manually push, but GH Actions does that too
 
 ## Flux info
 If you make a change to the site, it might take up to 30m to push out, due to the timings I have in FLUX.  
@@ -19,6 +29,8 @@ flux reconcile helmrelease justneverlift -n justneverlift
 ```
 
 
+
 ## Major changes
+01-03-2026 - Happy New Year, working on using more Mainroad features, https://github.com/Vimux/Mainroad  
 12-30-2025 - Updated for more automation with Flux, build and IMAGE:VERSION 
 12-28-2025 - Tired of the original hugo theme changing and having to correct MY content.  Switched to mainroad theme instead.
