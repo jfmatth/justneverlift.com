@@ -1,0 +1,35 @@
+baseurl = "/"
+title = "Just Never Lift"
+languageCode = "en-us"
+theme = "mainroad"
+
+
+[Params]
+  description = "My NASA Track history"
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false
+  pager = true
+  post_meta = ["author", "date", "categories", "translations"]
+  mainSections = ["post", "education"]
+
+  sectionPagesMenu = 'main'
+
+  Author = "John Matthew"
+  bio = "HPDE 3/4 group leader for NASA SoCal"
+  avatar = "img/avatar.png"
+
+
+[Params.logo]
+  subtitle = "Track experiences"
+
+[Params.sidebar]
+  home = "left"   # Configure layout for home page
+  list = "left"   # Configure layout for list pages
+  single = "left" # Configure layout for single pages
+  
+  # Enable widgets in given order
+  widgets = [ "recent", "categories", "taglist", "sidemenu"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)

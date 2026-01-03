@@ -3,13 +3,18 @@ title: 'Nationals 2024'
 date: 2024-09-16T21:51:14-07:00
 draft: false
 categories: ['racing']
-tags: ['st5','nasa', '99 miata','2024']
+tags: ['st5','nasa', '99 miata','2024','Miller Motorsports']
 ---
-
 
 ## Not our best showing 
 
+Showed up at Miller for Nationals and HP was down ~30hp.  Didn't catch a break at all, Transmission was going out.  Ed ran the race, we didn't do well :(
+
+
+
 ## Pics
+A few pics from the event  
+
 
 {{< figure src="http://images.3756home.org/images/PXL_20240907_154354102.jpg" title="Our car at Nationls Racecar"  width="auto" >}}
 
