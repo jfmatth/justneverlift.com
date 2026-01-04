@@ -89,10 +89,13 @@ livenessProbe:
   httpGet:
     path: /
     port: http
+  periodSeconds: 60         # check every 1m
+
 readinessProbe:
   httpGet:
     path: /
     port: http
+  periodSeconds: 60         # check every 1m
 
 autoscaling:
   enabled: false
