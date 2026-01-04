@@ -9,9 +9,17 @@ This is my site for all things I do at NASA.  I'm not much of a blogger or write
 - ```hugo server --log-level info``` does work on Powershell
 
 ### New posts
-To create a new post:  
-- ```hugo new post\filename.md``` 
-- All entries go into the post folder (for now)  
+
+A generic post about something:
+```
+hugo new post\filename.md
+``` 
+
+A post for education:
+```
+hugo new education\filename.md
+```
+
 
 ## Building the site
 For each update:
@@ -32,6 +40,7 @@ flux reconcile helmrelease justneverlift -n justneverlift
 
 
 ## Major changes
+01-04-2025 - Added spellcheck, very cool.  See ```buildimage.yaml``` for link to repo from action  
 01-03-2026 - Happy New Year, working on using more Mainroad features, https://github.com/Vimux/Mainroad  
-12-30-2025 - Updated for more automation with Flux, build and IMAGE:VERSION 
-12-28-2025 - Tired of the original hugo theme changing and having to correct MY content.  Switched to mainroad theme instead.
+12-30-2025 - Updated for more automation with Flux, build and IMAGE:VERSION  
+12-28-2025 - Tired of the original hugo theme changing and having to correct MY content.  Switched to mainroad theme instead.  
