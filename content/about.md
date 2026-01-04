@@ -14,7 +14,7 @@ This site is designed as a landing page for all my thoughts / instructions for s
 
 I hope you enjoy these posts and if you have suggestions, send me an email
 
-{{< figure src="https://images.3756home.org/images/PXL_20240414_231152149.jpg" title="My Racecar"  width="auto" >}}
+{{< figure src="https://images.3756home.org/images/PXL_20240414_231152149.jpg" title="My Race car"  width="auto" >}}
 
 
 {{< figure src="https://images.3756home.org/images/PXL_20240414_231137959.jpg" title="It's been a good season"  width="auto" >}}
