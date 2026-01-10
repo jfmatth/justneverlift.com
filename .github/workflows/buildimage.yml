@@ -19,6 +19,7 @@ jobs:
           words-to-ignore-file: ./words-to-ignore.txt
 
   build:
+    needs: spellcheck
     runs-on: ubuntu-latest
 
     steps:
