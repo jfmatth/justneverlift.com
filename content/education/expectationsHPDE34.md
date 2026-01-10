@@ -1,5 +1,5 @@
 ---
-title: 'Expectations'
+title: 'Education - Expectations'
 date: 2026-01-04T14:04:28-08:00
 draft: false
 categories: ['education']
