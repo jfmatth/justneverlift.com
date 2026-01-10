@@ -22,16 +22,16 @@ All the content for this site is on my Github repo [justneverlift.com](https://g
 ### Building the site - a HUGO container
 Once HUGO generates the HTML, then what?  HTML is great, but serving that on a webserver can be cumbersome; Enter **docker containers**.  
 
-I have another project called [hugobuilder](https://github.com/jfmatth/hugobuilder) that takes in a hugo site (markdown, etc) and generates the HTML into a single container that you can 'host' on any container system.
+I have another project called [hugobuilder](https://github.com/jfmatth/hugobuilder) that takes in a hugo site (markdown, etc) and generates the an NGINX container with all the generated HTML that you can 'host' on any container system.
 
-```hugo contents``` ---> ```hugobuilder``` ---> Container using NGINX and HTML files
+```hugo contents``` ---> ```hugobuilder``` ---> ```NGINX Container```
 
 Building the container by hand would be manual, so I use Github Actions to build the containers to that repo everytime there is push to the Master branch (technospeak I won't explain).
 
 ## Hosting the site
 There are lots of ways to host a HUGO site, even Github provides an easy way to host them, but that wasn't for me, I wanted my own infrastructure to play with, learn from and see it work.
 
-### VPS provider (https://us.ovhcloud.com/)
+### VPS provider [OHV Cloud](https://us.ovhcloud.com/)
 I stumbled  onto OHV a few months back.  I like them because they are inexpensive and provide one of the best values I've found for personal VPS's (virtual private servers).  While most cloud providers charge the same (1x1 for $5/mo), OHV provides a 4x8 for just $5/mo, which is the best deal I've found.  Check them out if you need a personal VPS.
 
 On a geeky note, looks like they use OpenStack as their hypervisor, which might be more efficient than other platforms.  
