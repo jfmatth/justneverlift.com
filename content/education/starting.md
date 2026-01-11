@@ -4,9 +4,7 @@ date: 2026-01-03
 draft: false
 categories: ['education']
 tags: []
-menu:
-  main:
-    name: Education
+
 ---
 
 For 2026, I'm going to make a real effort to add to my Education section.
