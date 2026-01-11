@@ -1,4 +1,4 @@
-FROM ghcr.io/jfmatth/hugobuilder:latest as hugo
+FROM ghcr.io/jfmatth/hugobuilder:latest AS hugo
 
 # Copy the contents of the current working directory to the static-site directory.
 COPY . /static-site
