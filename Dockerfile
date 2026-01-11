@@ -1,4 +1,4 @@
-FROM ghcr.io/jfmatth/hugobuilder:latest as HUGO
+FROM ghcr.io/jfmatth/hugobuilder:latest AS hugo
 
 # Copy the contents of the current working directory to the static-site directory.
 COPY . /static-site
@@ -11,4 +11,4 @@ RUN hugo --logLevel debug --source=/static-site --destination=/static-site/publi
 # copy the built static site files to the NGINX html directory.
 # FROM docker.io/nginx
 FROM cgr.dev/chainguard/nginx
-COPY --from=HUGO /static-site/public/ /usr/share/nginx/html/
+COPY --from=hugo /static-site/public/ /usr/share/nginx/html/
