@@ -4,9 +4,7 @@ date: 2026-01-03T16:56:41-08:00
 draft: false
 categories: ['education']
 tags: []
-menu:
-  main:
-    name: Education
+
 ---
 In the category of Eductation, I want to write articles about the following:  
 

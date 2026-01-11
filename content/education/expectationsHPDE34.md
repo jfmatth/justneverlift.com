@@ -4,9 +4,7 @@ date: 2026-01-04T14:04:28-08:00
 draft: false
 categories: ['education']
 tags: []
-menu:
-  main:
-    name: Education
+
 ---
 
 ## What do I expect of incoming drivers for 3/4
