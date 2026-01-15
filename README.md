@@ -20,12 +20,17 @@ A post for education:
 hugo new education\filename.md
 ```
 
-
 ## Building the site
 For each update:
-- change the VERSION file to reflect the version of the container that runs the site.  I use the date format v.YYYY.MM.DD  
+- change the VERSION file to reflect the version of the container that runs the site.  I use the date format v.YYYY.MM.DD-#  
+I only update the version for the content, not the Docker or other pipeline features.
 
 - run ```build``` which should pickup my build script to build to the ```IMAGE:VERSION``` Docker image, add ```-push``` if you want to manually push, but GH Actions does that too
+
+### Github Actions
+- **drafts** branch will run spellcheck and test the build, but not push to registry  
+- **master** branch will run spellcheck, build and push to registry  
+
 
 ## Flux info
 If you make a change to the site, it might take up to 30m to push out, due to the timings I have in FLUX.  
