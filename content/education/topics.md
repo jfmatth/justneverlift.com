@@ -9,7 +9,8 @@ tags: []
 In the category of Eductation, I want to write articles about the following:  
 
 
-- [X] Expectations for HPDE 3/4  
+- [X] Expectations for HPDE 3/4
+- [ ] Turning vs. Rotating  
 - [ ] Modifying your car, should you and when  
   - [ ] Tires
   - [ ] Suspension

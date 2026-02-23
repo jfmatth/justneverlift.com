@@ -2,7 +2,9 @@
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: {{ .Date }}
 draft: false
-categories: ['education']
+categories:
+  - 'education'
+  
 tags: []
 menu:
   main:
