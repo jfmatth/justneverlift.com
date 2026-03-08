@@ -11,7 +11,7 @@ menu:
     name: Education
 ---
 
-Too many times I see drivers struggling what does rotating mean vs. turning.
+Too many times I see drivers struggling with how to rotate the car in a turn  
 
 ## What is rotating?
 
