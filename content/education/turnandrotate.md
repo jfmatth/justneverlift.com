@@ -1,7 +1,7 @@
 ---
 title: 'Turning vs. Rotating'
 date: 2026-02-23T09:28:45-08:00
-draft: true
+draft: false
 categories:
   - 'education'
   
@@ -11,9 +11,8 @@ menu:
     name: Education
 ---
 
-Too many times I see drivers struggling what does rotating mean vs. turning.
+Too many times I see drivers struggling rotating the car.
 
 ## What is rotating?
 
 - You turn to rotate - right?
-
