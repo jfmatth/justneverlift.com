@@ -1,7 +1,7 @@
 baseurl = "/"
 title = "Just Never Lift"
 languageCode = "en-us"
-theme = "mainroad"
+theme = "roadster"
 
 
 [Params]
