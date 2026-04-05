@@ -5,6 +5,9 @@ on:
     branches:
       - drafts
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   spellcheck:
     # https://github.com/matheus23/md-spellcheck-action
