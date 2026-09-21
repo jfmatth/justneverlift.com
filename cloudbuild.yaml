@@ -1,23 +1,22 @@
 steps:
   - name: gcr.io/cloud-builders/docker
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/justneverlift/site:$SHORT_SHA', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/app-ar/app-image:$SHORT_SHA', '.']
 
   - name: gcr.io/cloud-builders/docker
-    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/justneverlift/site:$SHORT_SHA']
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/app-ar/app-image:$SHORT_SHA']
 
   - name: gcr.io/google-cloud-builders/gcloud
     args:
       [
-        'run', 'deploy', 'justneverlift',
-        '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/justneverlift/site:$SHORT_SHA',
+        'run', 'deploy', 'app-service',
+        '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/app-ar/app-image:$SHORT_SHA',
         '--region', 'us-central1',
         '--platform', 'managed',
         '--allow-unauthenticated'
       ]
 
 images:
-  - 'us-central1-docker.pkg.dev/$PROJECT_ID/justneverlift/site:$SHORT_SHA'
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/app-ar/app-image:$SHORT_SHA'
 
 options:
-  # default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
   logging: CLOUD_LOGGING_ONLY
